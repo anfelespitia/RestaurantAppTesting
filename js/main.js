@@ -1,8 +1,9 @@
+
 let restaurants,
   neighborhoods,
   cuisines
 var map
-var markers = []
+var markers = [];
 
 /**
  * Fetch neighborhoods and cuisines as soon as the page is loaded.
@@ -201,5 +202,3 @@ if ('serviceWorker' in navigator) {
     console.log('Registration failed with ' + error);
   });
 }
-
-
