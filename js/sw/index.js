@@ -1,4 +1,4 @@
-var staticCacheName = 'restaurant-cahce-1';
+var staticCacheName = 'restaurant-cache-1';
 let urlToCache = [
     '/skeleton',
     'js/main.js',
