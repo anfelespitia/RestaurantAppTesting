@@ -37,6 +37,13 @@
   <script type="application/javascript" charset="utf-8" src="js/main.js"></script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzPOZ7X1ixj6TnU_mPnow_NefOFcIgS7w&libraries=places&callback=initMap"></script>
 
+<script>
+if('serviceWorker' in navigator) {
+  navigator.serviceWorker
+           .register('/sw.js')
+           .then(function() { console.log("Service Worker Registered"); });
+}
+</script>
 
   <footer id="footer">
     Copyright (c) 2018 By Andres Espitia <a href="/"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
