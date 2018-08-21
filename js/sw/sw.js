@@ -1,8 +1,7 @@
-var staticCacheName = 'restaurant-cahce-1';
+var staticCacheName = 'restaurant-cache-1';
 
 let urlToCache = [
     '/',
-    './index.html',
     './restaurant.html',
     './css/styles.css',
     './data/restaurants.json',
@@ -49,11 +48,10 @@ self.addEventListener('activate', function (event) {
     );
 });
 
-self.addEventListener('fetch', function(event) {
-  console.log(event.request.url);
+self.addEventListener('fetch', function (event) {
     event.respondWith(
-      caches.match(event.request).then(function(response) {
-        return response || fetch(event.request);
-      })
+        caches.match(event.request).then(function (response) {
+            return response || fetch(event.request);
+        })
     );
 });
