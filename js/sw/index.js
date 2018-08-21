@@ -2,7 +2,6 @@
 
 var staticCacheName = 'restaurant-cahce-1';
 let urlToCache = [
-    '/skeleton',
     'js/main.js',
     'js/restaurant_info.js',
     'js/dbhelper.js',
@@ -18,7 +17,6 @@ let urlToCache = [
     'img/8.jpg',
     'img/9.jpg',
     'img/10.jpg',
-    '//normalize-css.googlecode.com/svn/trunk/normalize.css"',
     'https://fonts.gstatic.com/s/roboto/v15/d-6IYplOFocCacKzxwXSOD8E0i7KZn-EPnyo3HZu7kw.woff'
 ];
 self.addEventListener('install', function (event) {
