@@ -17,7 +17,6 @@ let urlToCache = [
     'img/8.jpg',
     'img/9.jpg',
     'img/10.jpg',
-    'https://fonts.gstatic.com/s/roboto/v15/d-6IYplOFocCacKzxwXSOD8E0i7KZn-EPnyo3HZu7kw.woff'
 ];
 self.addEventListener('install', function (event) {
     console.log('work fine');
