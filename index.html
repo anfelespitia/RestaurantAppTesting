@@ -25,7 +25,7 @@
         <select id="neighborhoods-select" name="neighborhoods" aria-label="Select Neighborhood" onchange="updateRestaurants()">
           <option value="all">All Neighborhoods</option>
         </select>
-        <select id="cuisines-select" name="cuisines" aria-label="Select Cuisines"onchange="updateRestaurants()">
+        <select id="cuisines-select" name="cuisines" aria-label="Select Cusisine"onchange="updateRestaurants()">
           <option value="all">All Cuisines</option>
         </select>
       </div>
@@ -36,14 +36,6 @@
   <script type="application/javascript" charset="utf-8" src="js/dbhelper.js"></script>
   <script type="application/javascript" charset="utf-8" src="js/main.js"></script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzPOZ7X1ixj6TnU_mPnow_NefOFcIgS7w&libraries=places&callback=initMap"></script>
-
-<script>
-if('serviceWorker' in navigator) {
-  navigator.serviceWorker
-           .register('./js/sw/sw.js')
-           .then(function() { console.log("Service Worker Registered"); });
-}
-</script>
 
   <footer id="footer">
     Copyright (c) 2018 By Andres Espitia <a href="/"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
